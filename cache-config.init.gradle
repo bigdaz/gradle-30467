@@ -1,0 +1,7 @@
+beforeSettings { settings ->
+    settings.caches {
+        cleanup = Cleanup.ALWAYS
+
+        buildCache.setRemoveUnusedEntriesAfterDays(5)
+    }
+}
